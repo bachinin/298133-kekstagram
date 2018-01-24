@@ -1,7 +1,7 @@
 # Личный проект «Кекстаграм» [![Build status][travis-image]][travis-url]
 
 * Студент: [Артём Бачинин](https://up.htmlacademy.ru/javascript/12/user/298133).
-* Наставник: `Неизвестно`.
+* Наставник: `Руфат Хасларов`.
 
 ---
 
