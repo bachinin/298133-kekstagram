@@ -28,14 +28,14 @@ for (var i = 1; i <= 25; i++) {
 
 var pictureTemplate = document.querySelector('#picture-template').content;
 
-var renderPicture = function (photo) {
+var renderPicture = function (picture) {
   var pictureElement = pictureTemplate.cloneNode(true);
-  pictureElement.querySelector('.picture').getElementsByTagName('img')[0].src = photo.url;
-  pictureElement.querySelector('.picture-likes').textContent = photo.likes;
-  pictureElement.querySelector('.picture-comments').textContent = photo.comments;
+  pictureElement.querySelector('.picture').getElementsByTagName('img')[0].src = picture.url;
+  pictureElement.querySelector('.picture-likes').textContent = picture.likes;
+  pictureElement.querySelector('.picture-comments').textContent = picture.comments;
 
   return pictureElement;
-}
+};
 
 var fragment = document.createDocumentFragment();
 for (var j = 0; j < photos.length; j++) {
@@ -49,6 +49,6 @@ var galleryOverlay = document.querySelector('.gallery-overlay');
 galleryOverlay.classList.remove('hidden');
 
 galleryOverlay.querySelector('.gallery-overlay-image').src = photos[0].url;
-galleryOverlay.querySelector('.likes-count').textContent =  photos[0].likes;
+galleryOverlay.querySelector('.likes-count').textContent = photos[0].likes;
 galleryOverlay.querySelector('.comments-count').textContent = photos[0].comments;
 
